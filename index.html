@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ConcretoWeb</title>
+		<script src="./dimensionamento_flexao_simples.js"></script>
+	</head>
+	<body>
+		<h1>ConcretoWeb</h1>
+		<h2>Dimensionamento à flexão simples</h2>
+		<h3>(NBR 6118) Domínio 3/4</h3>
+		<div style = "display:inline-block">
+			<input placeholder="momento solicitante" onkeyup="Md = +this.value;atualiza_tela()"><span>N/mm</span>
+			<br>
+			<input placeholder="fck" onkeyup="fck = +this.value;atualiza_tela()"><span>MPa</span>
+			<br>
+			<input placeholder="fyk" onkeyup="fyk = +this.value;atualiza_tela()"><span>Mpa</span>
+			<br>
+			<input placeholder="base" onkeyup="base = +this.value;atualiza_tela()"><span>mm</span>
+			<br>
+			<input placeholder="altura" onkeyup="altura = +this.value;atualiza_tela()"><span>mm</span>
+			<br>
+		</div>
+
+		<div style = "display:inline-block">
+			<b>Área de armadura:</b>
+			<h1 id="resultado">resultado </h1>
+		</div>
+	</body>
+</html>
